@@ -64,7 +64,7 @@ Create a text file to color slope from black to white `color_slope.txt`
 	gdal_contour -a height ./MapFiles/sanjuan.tif ./MapFiles/sanjuan_contour_50m.shp -i 50.0
 
 
-## Combine DEM, Color Relief, and Slopeshade with Mapnik and Python
+## Combined Terrain Map with Mapnik and Python
 
 Define the map styles and layers with in `sanjuan_terrain.xml`  
 Get the projection for your EPSG zone from the *proj4* link [here](http://spatialreference.org/ref/epsg/32719/)

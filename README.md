@@ -15,6 +15,7 @@ Example terrain map from following code:
 
 	# Project the DEM to the area of interest using gdalwarp
 	# 32719 is the EPSG projection for UTM zone 19S in WGS 84
+	# -te option trims the full dem to xy limits of interest
 
 	gdalwarp -t_srs EPSG:32719 -te 462366 6472717 725556 6828061 -r bilinear ./MapSource/SH19/sh19.vrt ./MapFiles/sanjuan.tif
 
@@ -23,9 +24,9 @@ Example terrain map from following code:
 	gdalinfo -mm ./MapFiles/sanjuan.tif
 
 	# Convert to .png to preview the DEM
-	# Low and high elevations are 8 6720
+	# Low and high elevations are 328 6090
 	
-	gdal_translate -of PNG -ot Byte -scale 8 6720 0 256 ./MapFiles/sanjuan.tif ./MapFiles/sanjuan.png
+	gdal_translate -of PNG -ot Byte -scale 328 6090 0 256 ./MapFiles/sanjuan.tif ./MapFiles/sanjuan.png
 	
 
 ## Convert DEM to Hillshade

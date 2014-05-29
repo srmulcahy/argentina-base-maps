@@ -3,9 +3,6 @@ Download SRTM data from [here](http://www.viewfinderpanoramas.org/dem3.html#ande
 
 Used info from [thematic mapper](http://blog.thematicmapping.org/2012/06/digital-terrain-modeling-and-mapping.html) blog.
 
-Example terrain map from following code:
-  
-![sanjuan-terrain](https://raw.githubusercontent.com/srmulcahy/ArgentinaBaseMap/master/MapFiles/sanjuan_terrain.png)
 
 ## Create a DEM
 

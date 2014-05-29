@@ -74,13 +74,13 @@ Get the projection for your EPSG zone from the *proj4* link [here](http://spatia
  
   	<Style name="color relief style">
     	<Rule>
-      	<RasterSymbolizer mode="normal" />
+      	<RasterSymbolizer comp-op="src-over"/>
     	</Rule>
   	</Style>
 
   	<Style name="hillshade style">
     	<Rule>
-      	<RasterSymbolizer opacity="0.6" mode="multiply" />
+      	<RasterSymbolizer opacity="0.6" comp-op="multiply" />
     	</Rule>
   	</Style>
  
@@ -106,9 +106,9 @@ Python script to combine layers with mapnik `sanjuan_terrain.py`
 
 	import mapnik
 	map = mapnik.Map(3124, 4218)
-	mapnik.load_map(map, './MapFiles/sanjuan_terrain.xml')
+	mapnik.load_map(map, './MapScripts/sanjuan_terrain.xml')
 	map.zoom_all() 
-	mapnik.render_to_file(map, './MapFiles/sanjuan_terrain.png')
+	mapnik.render_to_file(map, './MapFiles/sanjuan_terrain.tif')
 
 Run the script
 

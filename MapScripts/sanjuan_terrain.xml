@@ -2,12 +2,12 @@
 
   <Style name="color relief style">
     <Rule>
-      <RasterSymbolizer mode="normal" />
+      <RasterSymbolizer comp-op="src-over" />
     </Rule>
   </Style>  
   <Style name="hillshade style">
     <Rule>
-      <RasterSymbolizer opacity="0.75" mode="multiply" />
+      <RasterSymbolizer opacity="0.75" comp-op="multiply" />
     </Rule>
   </Style>
 
